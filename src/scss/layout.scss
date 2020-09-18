@@ -1,4 +1,35 @@
 header{
-  background-color: $black;
-  color: $black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  nav{
+    padding: 20px;
+  }
+  ul{
+    min-width: 196px;
+    display: flex;
+    align-items: center;
+  }
+  li{
+    font-size: 13px;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+  img{
+    width: 16px;
+    height: 16px;
+  }
+  button{
+    border: 1px solid $blue;
+    font-weight: bold;
+    outline: none;
+    background: $blue;
+    padding: 5px 10px;
+    color: $white;
+    cursor: pointer;
+    &:hover{
+      background: $darkBlue;
+    }
+  }
 }

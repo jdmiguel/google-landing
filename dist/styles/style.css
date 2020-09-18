@@ -16,19 +16,14 @@ header,
 input,
 ul,
 li {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
   margin: 0;
   padding: 0; }
 
 html,
 body {
   background: #FFFFFF; }
-
-body {
-  font-display: auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  color: #221e1f; }
 
 button {
   cursor: pointer;
@@ -62,8 +57,38 @@ select:-webkit-autofill {
   background-image: none !important;
   color: inherit !important; }
 
+.link {
+  color: #000000;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+
 header {
-  background-color: #221e1f;
-  color: #221e1f; }
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
+  header nav {
+    padding: 20px; }
+  header ul {
+    min-width: 196px;
+    display: flex;
+    align-items: center; }
+  header li {
+    font-size: 13px; }
+    header li:not(:last-of-type) {
+      margin-right: 15px; }
+  header img {
+    width: 16px;
+    height: 16px; }
+  header button {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    cursor: pointer; }
+    header button:hover {
+      background: #4683ea; }
 
 /*# sourceMappingURL=style.css.map */
