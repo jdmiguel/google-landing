@@ -1,0 +1,48 @@
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .link{
+    color: $grey;
+  }
+  nav{
+    &:first-of-type {
+      li{
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+      }
+    }
+    &:last-of-type {
+      li{
+        &:not(:first-of-type) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  ul{
+    display: flex;
+  }
+}
+
+h2{
+  color: $grey;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.country{
+  padding: 13px 30px;
+  background-color: $darkWhite;
+  border-top: 1px solid $softGrey;
+}
+
+.config{
+  @extend .country;
+  @extend h2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -2,6 +2,7 @@ html,
 body,
 h1,
 h2,
+.config,
 h3,
 h4,
 h5,
@@ -17,12 +18,12 @@ input,
 ul,
 li {
   font-family: 'Arial', sans-serif;
-  color: #222222;
   margin: 0;
   padding: 0; }
 
 html,
 body {
+  color: #222222;
   background: #FFFFFF; }
 
 button {
@@ -91,15 +92,6 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 130px; }
-  main h1 {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center; }
-    main h1 img {
-      width: 90%; }
-    @media only screen and (min-width: 768px) {
-      main h1 img {
-        width: auto; } }
   main svg:first-of-type {
     width: 26px;
     margin-left: 12px; }
@@ -113,6 +105,16 @@ main {
     height: 40px;
     font-size: 16px;
     margin: 0 15px; }
+
+h1 {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center; }
+  h1 img {
+    width: 90%; }
+  @media only screen and (min-width: 768px) {
+    h1 img {
+      width: auto; } }
 
 .link {
   color: #222222;
@@ -171,5 +173,34 @@ main {
     margin-right: 15px; }
   .languages li a:hover {
     text-decoration: underline; }
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  footer .link {
+    color: #5F6368; }
+  footer nav:first-of-type li:not(:last-of-type) {
+    margin-right: 15px; }
+  footer nav:last-of-type li:not(:first-of-type) {
+    margin-left: 15px; }
+  footer ul {
+    display: flex; }
+
+h2, .config {
+  color: #5F6368;
+  font-size: 14px;
+  font-weight: normal; }
+
+.country, .config {
+  padding: 13px 30px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #D5D5D5; }
+
+.config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
