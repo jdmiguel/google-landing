@@ -1,0 +1,69 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+dt,
+p,
+section,
+figure,
+div,
+header,
+input,
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  background: #FFFFFF; }
+
+body {
+  font-display: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #221e1f; }
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+
+li {
+  list-style: none; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+button, input {
+  background: transparent;
+  border: none;
+  outline: none; }
+  button:focus, input:focus {
+    outline: none; }
+
+input {
+  outline: none; }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: none !important;
+  background-image: none !important;
+  color: inherit !important; }
+
+header {
+  background-color: #221e1f;
+  color: #221e1f; }
+
+/*# sourceMappingURL=style.css.map */

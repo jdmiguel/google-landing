@@ -1,0 +1,11 @@
+{
+  "name": "google-landing",
+  "version": "1.0.0",
+  "description": "Google landing with sass",
+  "main": "index.js",
+  "author": "jdmiguel",
+  "license": "ISC",
+  "scripts": {
+    "sass": "sass src/scss/index.scss dist/styles/style.css"
+  }
+}
