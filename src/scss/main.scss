@@ -4,6 +4,9 @@ main{
   justify-content: center;
   align-items: center;
   padding-top: 130px;
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    padding-top: 10px;
+  }
   svg{
     &:first-of-type {
       width: 26px;
@@ -34,6 +37,11 @@ h1{
   @media only screen and (min-width: 768px) {
     img{
       width: auto;
+    }
+  }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    img{
+      width: 80%;
     }
   }
 }

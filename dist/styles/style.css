@@ -92,6 +92,9 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 130px; }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    main {
+      padding-top: 10px; } }
   main svg:first-of-type {
     width: 26px;
     margin-left: 12px; }
@@ -115,6 +118,9 @@ h1 {
   @media only screen and (min-width: 768px) {
     h1 img {
       width: auto; } }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    h1 img {
+      width: 80%; } }
 
 .link {
   color: #222222;
@@ -179,10 +185,17 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0; }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    footer {
+      position: initial;
+      margin-top: 25px; } }
   footer .link {
     color: #5F6368; }
   footer nav:first-of-type li:not(:last-of-type) {
     margin-right: 15px; }
+  @media only screen and (max-width: 500px) {
+    footer nav:first-of-type {
+      margin-bottom: 10px; } }
   footer nav:last-of-type li:not(:first-of-type) {
     margin-left: 15px; }
   footer ul {
@@ -192,6 +205,9 @@ h2, .config {
   color: #5F6368;
   font-size: 14px;
   font-weight: normal; }
+  @media only screen and (max-width: 500px) {
+    h2, .config {
+      text-align: center; } }
 
 .country, .config {
   padding: 13px 30px;
@@ -202,5 +218,9 @@ h2, .config {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 500px) {
+    .config {
+      flex-direction: column;
+      padding: 13px 15px; } }
 
 /*# sourceMappingURL=style.css.map */
