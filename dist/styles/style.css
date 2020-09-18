@@ -17,7 +17,7 @@ input,
 ul,
 li {
   font-family: 'Arial', sans-serif;
-  color: #000000;
+  color: #222222;
   margin: 0;
   padding: 0; }
 
@@ -57,12 +57,6 @@ select:-webkit-autofill {
   background-image: none !important;
   color: inherit !important; }
 
-.link {
-  color: #000000;
-  text-decoration: none; }
-  .link:hover {
-    text-decoration: underline; }
-
 header {
   width: 100%;
   display: flex;
@@ -90,5 +84,92 @@ header {
     cursor: pointer; }
     header button:hover {
       background: #4683ea; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 130px; }
+  main h1 {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center; }
+    main h1 img {
+      width: 90%; }
+    @media only screen and (min-width: 768px) {
+      main h1 img {
+        width: auto; } }
+  main svg:first-of-type {
+    width: 26px;
+    margin-left: 12px; }
+  main svg:last-of-type {
+    width: 30px;
+    margin-right: 12px;
+    cursor: pointer; }
+  main input {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin: 0 15px; }
+
+.link {
+  color: #222222;
+  text-decoration: none; }
+  .link:hover {
+    text-decoration: underline; }
+
+.finder {
+  border: 1px solid #D5D5D5;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 90%;
+  max-width: 584px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 8px;
+  margin-bottom: 20px; }
+  .finder:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0); }
+  @media only screen and (min-width: 768px) {
+    .finder {
+      width: 100%; } }
+
+.buttons-wrapper {
+  margin-bottom: 22px; }
+  .buttons-wrapper button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer; }
+    .buttons-wrapper button:hover {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #D5D5D5;
+      color: #222222; }
+
+.languages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px; }
+  .languages ul {
+    margin-left: 10px;
+    display: flex; }
+  .languages li:not(:last-of-type) {
+    margin-right: 15px; }
+  .languages li a:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
